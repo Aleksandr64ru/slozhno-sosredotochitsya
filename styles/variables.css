@@ -1,11 +1,22 @@
+
 :root {
   --accent-color: #ff0070;
   --tittle-color: #db00ff;
   --text-color: #f1b2ce;
   --subtitle-color: #000028;
-  --bg-image: url(../images/cover-image-dark.png);
   --text-family: IBM Plex Mono;
+  --bg-image: url(../images/cover-image-dark.png);
   --text-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
   --title-size-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --title-size-desktop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+}
+
+@media (prefers-color-scheme: auto) {
+  :root {
+    --accent-color: #ff0070;
+    --tittle-color: #db00ff;
+    --text-color: #f1b2ce;
+    --subtitle-color: #000028;
+    --bg-image: url(../images/cover-image-dark.png);
+  }
 }
