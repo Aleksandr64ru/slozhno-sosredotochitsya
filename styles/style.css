@@ -1,20 +1,18 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 * {
-  
 }
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   font-family: var(--text-family), sans-serif;
   font-size: var(--text-size);
-  background-image: var( --bg-image);
+  background-image: var(--bg-image);
   background-color: black;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  
 }
 
 .decorated-subtittle {
@@ -138,7 +136,7 @@ button:disabled {
 
 .header__theme-menu-button:hover {
   border: 1px solid var(--accent-color);
-  padding: 0 10px;;
+  padding: 0 10px;
 }
 
 .header__theme-menu-button:active {
@@ -158,7 +156,6 @@ button:disabled {
   align-self: center;
   padding-right: 10px;
 }
-
 
 @media (width >= 768px) {
   .header__theme-menu {
@@ -211,19 +208,15 @@ button:disabled {
 
 @media (width >= 768px) {
   .tittle {
-    justify-self: start;
-    align-self: center;
-    margin-block-end: 1%;
+    margin-block-start: 120px;
     padding-left: 0px;
-    margin-inline-start: 0px;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
 
 @media (width >= 1024px) {
   .tittle {
-    margin-block-start: 24px;
-    align-self: baseline;
+    margin-block-start: 30px;
   }
 }
 .tittle__phrase {
