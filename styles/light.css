@@ -19,3 +19,12 @@
     --bg-image: url(../images/cover-image-light.png);
   }
 }
+
+.decorated-subtittle.theme_light {
+  color: rgba(255, 0, 112, 0);
+}
+
+
+.decorated-subtittle.theme_light::after {
+  color: rgba(255, 0, 112, 0);
+}
