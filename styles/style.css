@@ -1,17 +1,20 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
+* {
+  
+}
+
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  max-width: 1024px;
-  min-width: 375px;
   font-family: var(--text-family), sans-serif;
   font-size: var(--text-size);
-  background-image: var(--bg-image);
+  background-image: var( --bg-image);
   background-color: black;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  
 }
 
 .decorated-subtittle {
@@ -19,7 +22,7 @@
   color: var(--accent-color);
   top: 10px;
   right: 37px;
-  font-family: var(--text-family);
+  font-family: var(--text-family), sans-serif;
 }
 
 @media (width >= 768px) {
@@ -55,7 +58,8 @@
 .header {
   position: relative;
   min-width: 375px;
-  min-height: 100vh;
+  height: 100vh;
+  min-height: 668px;
   display: grid;
   grid-template-rows: 1fr 0.5fr 1fr;
 }
@@ -118,6 +122,7 @@ button:disabled {
 
 .header__theme-menu-button_active:disabled {
   border: 1px solid var(--accent-color);
+  padding: 0 10px;
 }
 
 .header__theme-menu-button:focus {
@@ -132,7 +137,8 @@ button:disabled {
 }
 
 .header__theme-menu-button:hover {
-  border: 0.5px solid var(--accent-color);
+  border: 1px solid var(--accent-color);
+  padding: 0 10px;;
 }
 
 .header__theme-menu-button:active {
@@ -148,17 +154,17 @@ button:disabled {
   font-size: var(--text-size);
   color: var(--accent-color);
   font-family: var(--text-family), sans-serif;
-  line-height: 190%;
   justify-self: end;
   align-self: center;
-  margin-inline-end: 15px;
+  padding-right: 10px;
 }
+
 
 @media (width >= 768px) {
   .header__theme-menu {
     justify-self: end;
-    margin-block-start: 140px;
-    margin-inline-end: 25px;
+    margin-block-start: 135px;
+    margin-inline-end: 18px;
   }
 }
 
@@ -166,14 +172,21 @@ button:disabled {
   .header__theme-menu {
     justify-self: center;
     align-self: self-start;
-    margin-inline-start: 3%;
-    margin-block-start: 15px;
+    margin-block-start: 19px;
+    margin-inline-start: 35px;
   }
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
 }
 
 @media (width >= 1024px) {
   .header__theme-menu-list {
     display: flex;
+    flex-direction: row;
     gap: 25px;
   }
 }
@@ -191,8 +204,8 @@ button:disabled {
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   color: var(--tittle-color);
   font-family: var(--text-family);
-  line-height: 80%;
-  margin-inline-start: 10px;
+  line-height: 95px;
+  padding-left: 10px;
   text-shadow: 4px 4px 0 var(--accent-color);
 }
 
@@ -201,6 +214,7 @@ button:disabled {
     justify-self: start;
     align-self: center;
     margin-block-end: 1%;
+    padding-left: 0px;
     margin-inline-start: 0px;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
@@ -208,7 +222,7 @@ button:disabled {
 
 @media (width >= 1024px) {
   .tittle {
-    margin-block-start: 15px;
+    margin-block-start: 24px;
     align-self: baseline;
   }
 }
@@ -227,9 +241,9 @@ button:disabled {
 @media (width >= 768px) {
   .tittle__phrase {
     justify-self: end;
-    margin-inline-end: 4%;
+    margin-inline-end: 20px;
     align-self: self-start;
-    width: 42%;
+    width: 364px;
     margin-block-start: 38px;
   }
 }
@@ -247,17 +261,17 @@ button:disabled {
 .content {
   font-family: var(--text-family), sans-serif;
   font-size: var(--text-size);
-  margin: 0 10px;
+  padding: 0 10px;
 }
 
 @media (width >= 768px) {
   .content {
-    margin: 0 20px;
+    padding: 0 20px;
   }
 }
 
 .content__item_concentrate {
-  margin-block-start: 30px;
+  margin-block-start: 43px;
 }
 
 @media (width >= 768px) {
@@ -265,7 +279,7 @@ button:disabled {
     margin-block-start: 55px;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 10px;
+    gap: 20px;
   }
 }
 
@@ -281,7 +295,7 @@ button:disabled {
 }
 
 .content_item_attention {
-  margin-block-start: 50px;
+  margin-block-start: 35px;
 }
 
 @media (width >= 768px) {
@@ -304,14 +318,15 @@ button:disabled {
   }
 }
 .content_item_adviсe {
-  margin-block-start: 46px;
+  margin-block-start: 40px;
 }
 
 @media (width >= 768px) {
   .content_item_adviсe {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    margin-block-start: 90px;
+    margin-block-start: 80px;
+    gap: 20px;
   }
 }
 
@@ -333,7 +348,7 @@ button:disabled {
 .subtitle__text {
   color: var(--subtitle-color);
   background-color: var(--accent-color);
-  font-family: var(--text-family);
+  font-family: var(--text-family), sans-serif;
   font-size: var(--text-size);
   margin-bottom: 10px;
 }
@@ -365,7 +380,7 @@ button:disabled {
   font-size: var(--text-size);
   color: var(--accent-color);
   word-spacing: 6.5px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .text__item {
@@ -373,16 +388,15 @@ button:disabled {
   color: var(--text-color);
   font-size: var(--text-size);
   line-height: 24.3px;
-  margin-top: 10px;
 }
 
 .pictures {
-  margin-block-start: 50px;
+  margin-block-start: 30px;
 }
 
 @media (width >= 768px) {
   .pictures {
-    margin-block-start: 110px;
+    margin-block-start: 68px;
   }
 }
 
@@ -393,7 +407,6 @@ button:disabled {
 }
 
 .images {
-  margin-block-start: 3%;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -431,9 +444,8 @@ button:disabled {
 }
 
 .footer {
-  margin-block-start: 40px;
-  min-width: 375px;
-  min-height: 100vh;
+  margin-block-start: 23px;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -442,16 +454,13 @@ button:disabled {
 
 @media (width >= 768px) {
   .footer {
-    margin-block-start: 66px;
-    min-width: 768px;
+    margin-block-start: 75px;
     min-height: 1024px;
   }
 }
 
 @media (width >= 1024px) {
   .footer {
-    margin-block-start: 60px;
-    width: 1024px;
     min-height: 768px;
   }
 }

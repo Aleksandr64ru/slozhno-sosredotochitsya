@@ -1,11 +1,8 @@
-:root.theme-dark {
+
+.page.theme_dark {
   --accent-color: #ff0070;
   --tittle-color: #db00ff;
   --text-color: #f1b2ce;
   --subtitle-color: #000028;
   --bg-image: url(../images/cover-image-dark.png);
 }
-.page.theme_dark {
-  
-}
-
