@@ -1,8 +1,5 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
-* {
-}
-
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   font-family: var(--text-family), sans-serif;
@@ -17,7 +14,7 @@
 
 .decorated-subtittle {
   position: absolute;
-  color: var(--accent-color);
+  color: var(--decoreted-color);
   top: 10px;
   right: 37px;
   font-family: var(--text-family), sans-serif;
@@ -35,7 +32,7 @@
   border-radius: 50%;
   width: 9px;
   height: 9px;
-  background-color: var(--accent-color);
+  background-color: var(--decoreted-color);
   position: absolute;
   margin-block-start: 7px;
   margin-inline-start: 9px;
@@ -59,14 +56,16 @@
   height: 100vh;
   min-height: 668px;
   display: grid;
-  grid-template-rows: 1fr 0.5fr 1fr;
+  grid-template-rows: 1fr min-content 1fr;
+  padding: 0 10px;
 }
 
 @media (width >= 768px) {
   .header {
     display: grid;
     min-height: 1024px;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 0.7fr 1fr 0.7fr;
+    padding: 0;
   }
 }
 
@@ -74,7 +73,7 @@
   .header {
     display: grid;
     min-height: 768px;
-    grid-template-rows: 0.4fr 0.3fr 0.2fr;
+    grid-template-rows: 1fr min-content 1fr;
   }
 }
 
@@ -83,8 +82,8 @@
   width: 25px;
   height: 25px;
   position: absolute;
-  border-top: 1px solid var(--accent-color);
-  border-right: 1px solid var(--accent-color);
+  border-top: 1px solid var(--zone-color);
+  border-right: 1px solid var(--zone-color);
   right: 10px;
   top: 10px;
 }
@@ -101,8 +100,8 @@
   width: 25px;
   height: 25px;
   position: absolute;
-  border-bottom: 1px solid var(--accent-color);
-  border-left: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--zone-color);
+  border-left: 1px solid var(--zone-color);
   left: 10px;
   bottom: 10px;
 }
@@ -154,14 +153,14 @@ button:disabled {
   font-family: var(--text-family), sans-serif;
   justify-self: end;
   align-self: center;
-  padding-right: 10px;
+  margin-block-start: 7px;
 }
 
 @media (width >= 768px) {
   .header__theme-menu {
-    justify-self: end;
-    margin-block-start: 135px;
-    margin-inline-end: 18px;
+    align-self: end;
+    margin-block-end: 1.8vi;
+    margin-inline-end: 2vi;
   }
 }
 
@@ -169,22 +168,22 @@ button:disabled {
   .header__theme-menu {
     justify-self: center;
     align-self: self-start;
-    margin-block-start: 19px;
-    margin-inline-start: 35px;
+    margin-block-start: 1.7vi;
+    margin-inline-start: 0.8vi;
   }
 }
 
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
-  gap: 13px;
+  gap: 10px;
 }
 
 @media (width >= 1024px) {
   .header__theme-menu-list {
     display: flex;
     flex-direction: row;
-    gap: 25px;
+    gap: 17px;
   }
 }
 
@@ -202,52 +201,50 @@ button:disabled {
   color: var(--tittle-color);
   font-family: var(--text-family);
   line-height: 95px;
-  padding-left: 10px;
   text-shadow: 4px 4px 0 var(--accent-color);
 }
 
 @media (width >= 768px) {
   .tittle {
-    margin-block-start: 120px;
-    padding-left: 0px;
+    align-self: center;
+    justify-self: flex-start;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
 
-@media (width >= 1024px) {
-  .tittle {
-    margin-block-start: 30px;
-  }
+.tittle__phrase_container {
+  display: flex;
+  justify-self: end;
 }
+
 .tittle__phrase {
   font-family: var(--text-font), sans-serif;
   background-color: var(--accent-color);
   font-size: var(--text-family);
   color: var(--subtitle-color);
   font-weight: 700;
-  max-width: 94%;
   justify-self: center;
   align-self: center;
-  margin-block-end: 15px;
+  width: 355px;
 }
 
 @media (width >= 768px) {
   .tittle__phrase {
     justify-self: end;
-    margin-inline-end: 20px;
-    align-self: self-start;
     width: 364px;
-    margin-block-start: 38px;
+    align-self: self-start;
+    margin-inline-end: 2.6vi;
   }
 }
 
 @media (width >= 1024px) {
   .tittle__phrase {
-    min-width: 491px;
     justify-self: end;
-    align-self: self-start;
-    margin-inline-end: 20px;
-    margin-block-start: 25px;
+    align-self: center;
+    width: 491px;
+    height: fit-content;
+    margin-block-end: 2%;
+    margin-inline-start: 1%;
   }
 }
 
@@ -278,7 +275,8 @@ button:disabled {
 
 @media (width >= 1024px) {
   .content__item_concentrate {
-    margin-block-start: 60px;
+    margin-block-start: 58px;
+    gap: 10px;
   }
 }
 
@@ -293,7 +291,7 @@ button:disabled {
 
 @media (width >= 768px) {
   .content_item_attention {
-    margin-block-start: 75px;
+    margin-block-start: 70px;
   }
 }
 
@@ -318,7 +316,7 @@ button:disabled {
   .content_item_adviсe {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    margin-block-start: 80px;
+    margin-block-start: 84px;
     gap: 20px;
   }
 }
@@ -326,6 +324,7 @@ button:disabled {
 @media (width >= 1024px) {
   .content_item_adviсe {
     margin-block-start: 60px;
+    gap: 10px;
   }
 }
 
@@ -358,10 +357,6 @@ button:disabled {
   margin-top: 20px;
 }
 
-.content_item_attention .subtitle__item {
-  width: 280px;
-}
-
 @media (width = 768px) {
   .content_item_attention .subtitle__item {
     width: 240px;
@@ -371,7 +366,7 @@ button:disabled {
 .subtitle__item {
   font-family: var(--text-family), sans-serif;
   font-size: var(--text-size);
-  color: var(--accent-color);
+  color: var(--alternative-color);
   word-spacing: 6.5px;
   margin-bottom: 15px;
 }
@@ -384,12 +379,12 @@ button:disabled {
 }
 
 .pictures {
-  margin-block-start: 30px;
+  margin-block-start: 25px;
 }
 
 @media (width >= 768px) {
   .pictures {
-    margin-block-start: 68px;
+    margin-block-start: 70px;
   }
 }
 
@@ -437,7 +432,7 @@ button:disabled {
 }
 
 .footer {
-  margin-block-start: 23px;
+  margin-block-start: 22px;
   height: 100vh;
   display: flex;
   align-items: center;

@@ -3,6 +3,9 @@
   --accent-color: #ff0070;
   --tittle-color: #db00ff;
   --text-color: #f1b2ce;
+  --alternative-color: #ff0070;
   --subtitle-color: #000028;
   --bg-image: url(../images/cover-image-dark.png);
+  --decoreted-color: rgba(255, 0, 112, 1);
+
 }

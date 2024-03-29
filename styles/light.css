@@ -3,8 +3,11 @@
   --accent-color: #ff8dcb;
   --tittle-color: #ffc2e6;
   --text-color: #353430;
+  --zone-color: #353430;
   --subtitle-color: #000028;
+  --alternative-color: #353430;
   --bg-image: url(../images/cover-image-light.png);
+  --decoreted-color: rgba(255, 0, 112, 0);
 }
 
 @media (prefers-color-scheme: light) {
@@ -14,5 +17,7 @@
     --text-color: #353430;
     --subtitle-color: #000028;
     --bg-image: url(../images/cover-image-light.png);
+    --decoreted-color: rgba(255, 0, 112, 0);
+    --zone-color: #353430;
   }
 }
