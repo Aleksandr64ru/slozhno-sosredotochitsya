@@ -292,18 +292,12 @@ button:disabled {
 
 @media (width >= 768px) {
   .subtitle__container {
-    gap: 5px;
-  }
-}
-
-@media (width >= 1024px) {
-  .subtitle__container {
-    gap: 5px;
+    gap: 4px;
   }
 }
 
 .content_item_attention {
-  margin-block-start: 27px;
+  margin-block-start: 25px;
 }
 
 @media (width >= 768px) {
@@ -337,15 +331,21 @@ button:disabled {
   }
 }
 .content_item_adviсe {
-  margin-block-start: 29px;
+  margin-block-start: 26px;
 }
 
 @media (width >= 768px) {
   .content_item_adviсe {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    margin-block-start: 65px;
+    margin-block-start: 61px;
     gap: 20px;
+  }
+}
+
+@media (width >= 768px) {
+  .independent__content_item {
+    margin-top: 1px;
   }
 }
 
@@ -355,9 +355,10 @@ button:disabled {
   }
 }
 
+
 @media (width >= 1024px) {
   .content_item_adviсe {
-    margin-block-start: 60px;
+    margin-block-start: 55px;
     gap: 10px;
   }
 }
@@ -375,7 +376,7 @@ button:disabled {
   background-color: var(--accent-color);
   font-family: var(--text-family), sans-serif;
   font-size: var(--text-size);
-  margin-bottom: 5px;
+  margin-bottom: 7px;
   line-height: 23px;
 }
 
@@ -384,7 +385,7 @@ button:disabled {
   background-color: var(--accent-color);
   font-size: var(--text-family);
   font-weight: 400;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 @media (width = 768px) {
@@ -408,13 +409,17 @@ button:disabled {
   padding-bottom: 10px;
 }
 
+.subtitle__text-no-bold ~ .text__item {
+  padding-top: 3px;
+}
+
 .pictures {
-  margin-block-start: 29px;
+  margin-block-start: 22px;
 }
 
 @media (width >= 768px) {
   .pictures {
-    margin-block-start: 55px;
+    margin-block-start: 52px;
   }
 }
 
@@ -445,7 +450,7 @@ button:disabled {
       "music books ice-cream"
       "music street street";
     grid-template-columns: 1fr 1fr 1fr;
-    margin-block-start: 22px;
+    margin-block-start: 20px;
   }
 }
 
