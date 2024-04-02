@@ -6,6 +6,7 @@
   --text-color: #353430;
   --color-disable: #353430;
   --zone-color: #353430;
+  --hover-color: rgba(50, 49, 45, 0.4);
   --subtitle-color: #353430;
   --alternative-color: #353430;
   --bg-image: url(../images/cover-image-light.png);
@@ -20,6 +21,7 @@
     --color-button: #353430;
     --color-disable: #353430;
     --alternative-color: #353430;
+    --hover-color: rgba(50, 49, 45, 0.4);
     --tittle-color: #ffc2e6;
     --subtitle-color: #353430;
     --bg-image: url(../images/cover-image-light.png);

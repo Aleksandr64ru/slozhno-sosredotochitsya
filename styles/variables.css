@@ -6,12 +6,13 @@
   --color-button: #ff0070;
   --color-disable: #ff0070;
   --subtitle-color: #000028;
+  --hover-color: rgba(255, 0, 112, 0.4);
   --zone-color: #ff0070;
   --alternative-color: #ff0070;
   --text-family: IBM Plex Mono;
   --bg-image: url(../images/cover-image-dark.png);
   --decoreted-color: rgba(255, 0, 112, 1);
-  --text-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
+  --text-size: 18px;
   --title-size-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --title-size-desktop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
 }
