@@ -229,7 +229,6 @@ button:disabled {
 @media (width >= 768px) {
   .tittle__phrase_conteiner {
     min-width: 364px;
-    min-height: 113px;
     align-self: self-start;
     margin-inline-end: 20px;
   }
